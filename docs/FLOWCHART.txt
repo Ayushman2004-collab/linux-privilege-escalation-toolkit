@@ -1,0 +1,34 @@
+START
+  |
+  v
+System Information Gathering
+  |
+  v
+Scan SUID/SGID Binaries
+  |
+  v
+Scan Weak Permissions
+  |
+  v
+Scan Sudo Configuration
+  |
+  v
+Scan Cron Jobs
+  |
+  v
+Scan Systemd Services
+  |
+  v
+Scan Linux Capabilities
+  |
+  v
+Check Kernel / Advisory Indicators
+  |
+  v
+Analyze Findings + Risk Score
+  |
+  v
+Generate JSON + HTML Report
+  |
+  v
+END

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lpet"
+version = "2.0.0"
+description = "Detection-only Linux privilege-boundary exposure scanner"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+lpet = "lpet.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
