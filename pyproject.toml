@@ -1,3 +1,4 @@
+
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
@@ -11,6 +12,27 @@ dependencies = []
 
 [project.scripts]
 lpet = "lpet.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "lpet",
+    "lpet.*",
+    "modules",
+    "modules.*",
+    "config",
+    "config.*",
+    "analyzer",
+    "analyzer.*",
+    "presentation",
+    "presentation.*",
+]
+exclude = [
+    "tests",
+    "tests.*",
+    "reports",
+    "reports.*",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
